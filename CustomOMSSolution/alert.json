@@ -153,7 +153,7 @@
     },
     {
       "name": "[variables('AlertName')]",
-      "type": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/actions",
+      "type": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/actions/",
       "apiVersion": "[variables('LogAnalyticsApiVersion')]",
       "dependsOn": [
         "[concat('Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/savedSearches/', variables('PattonTechAlert').SavedSearch.Name,'/schedules/',variables('PattonTechAlert').Schedule.Name)]"
@@ -172,7 +172,7 @@
     },
     {
       "name": "[variables('WebhookName')]",
-      "type": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/actions",
+      "type": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/actions/",
       "apiVersion": "[variables('LogAnalyticsApiVersion')]",
       "dependsOn": [
         "[concat('Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/savedSearches/', variables('PattonTechAlert').SavedSearch.Name,'/schedules/',variables('PattonTechAlert').Schedule.Name)]",
@@ -187,6 +187,5 @@
       }
     }
   ],
-  "outputs": {
-  }
+  "outputs": { }
 }
