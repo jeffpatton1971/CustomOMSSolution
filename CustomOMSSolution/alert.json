@@ -139,10 +139,10 @@
     },
     {
       "name": "[variables('ScheduleName')]",
-      "type": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules",
+      "type": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/",
       "apiVersion": "[variables('LogAnalyticsApiVersion')]",
       "dependsOn": [
-        "[variables('PattonTechAlert').SavedSearch.Name]"
+        "[variables('SavedSearchName')]"
       ],
       "properties": {
         "etag": "*",
@@ -156,7 +156,7 @@
       "type": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/actions",
       "apiVersion": "[variables('LogAnalyticsApiVersion')]",
       "dependsOn": [
-        "[variables('PattonTechAlert').Schedule.Name]"
+        "[variables('ScheduleName')]"
       ],
       "properties": {
         "etag": "*",
@@ -175,8 +175,8 @@
       "type": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/actions",
       "apiVersion": "[variables('LogAnalyticsApiVersion')]",
       "dependsOn": [
-        "[variables('PattonTechAlert').Schedule.Name]",
-        "[variables('PattonTechAlert').Action.Name]"
+        "[variables('ScheduleName')]",
+        "[variables('AlertName')]"
       ],
       "properties": {
         "etag": "*",
