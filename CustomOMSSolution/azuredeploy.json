@@ -62,7 +62,7 @@
             "value": "[parameters('workspaceName')]"
           },
           "id": {
-            "value": "pattontechmalwaresignatures"
+            "value": "malwaresignatures"
           },
           "SearchType": {
             "Value": "Malware"
@@ -104,7 +104,7 @@
             "value": "[parameters('workspaceName')]"
           },
           "id": {
-            "value": "pattontechservicehealth"
+            "value": "servicehealth"
           },
           "SearchType": {
             "Value": "ServiceHealth"
