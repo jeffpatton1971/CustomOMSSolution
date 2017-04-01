@@ -156,7 +156,7 @@
       "type": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/actions",
       "apiVersion": "[variables('LogAnalyticsApiVersion')]",
       "dependsOn": [
-        "[concat('Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/savedSearches/', variables('PattonTechAlert').SavedSearch.Name,'/',variables('PattonTechAlert').Schedule.Name)]"
+        "[concat('Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/savedSearches/', variables('PattonTechAlert').SavedSearch.Name,'/schedules/',variables('PattonTechAlert').Schedule.Name)]"
       ],
       "properties": {
         "etag": "*",
@@ -175,8 +175,8 @@
       "type": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/actions",
       "apiVersion": "[variables('LogAnalyticsApiVersion')]",
       "dependsOn": [
-        "[concat('Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/savedSearches/', variables('PattonTechAlert').SavedSearch.Name,'/',variables('PattonTechAlert').Schedule.Name)]",
-        "[concat('Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/savedSearches/', variables('PattonTechAlert').SavedSearch.Name,'/',variables('PattonTechAlert').Schedule.Name,'/actions/',variables('PattonTechAlert').Action.Name)]"
+        "[concat('Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/savedSearches/', variables('PattonTechAlert').SavedSearch.Name,'/schedules/',variables('PattonTechAlert').Schedule.Name)]",
+        "[concat('Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/savedSearches/', variables('PattonTechAlert').SavedSearch.Name,'/schedules/',variables('PattonTechAlert').Schedule.Name,'/actions/',variables('PattonTechAlert').Action.Name)]"
       ],
       "properties": {
         "etag": "*",
