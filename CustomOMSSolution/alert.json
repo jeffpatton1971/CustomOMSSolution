@@ -139,7 +139,7 @@
     },
     {
       "name": "[variables('ScheduleName')]",
-      "type": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/",
+      "type": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules",
       "apiVersion": "[variables('LogAnalyticsApiVersion')]",
       "dependsOn": [
         "[variables('SavedSearchName')]"
