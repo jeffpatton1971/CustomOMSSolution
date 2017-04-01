@@ -95,7 +95,7 @@
         "query": "[parameters('Query')]"
       },
       "Schedule": {
-        "Name": "[concat(parameters('id'),'-',parameters('id'),'schedule')]",
+        "Name": "[concat(parameters('id'),'-','schedule')]",
         "enabled": "[parameters('Enabled')]",
         "interval": "[parameters('Interval')]",
         "queryTimeSpan": "[parameters('TimeSpan')]"
