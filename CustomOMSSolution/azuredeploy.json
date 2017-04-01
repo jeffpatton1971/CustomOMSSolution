@@ -34,8 +34,8 @@
         "referencedResources": [
         ],
         "containedResources": [
-          "[concat('Microsoft.OperationalInsights/workspaces/', parameters('workspaceName'), '/savedSearches/raxmalwaresignatures')]",
-          "[concat('Microsoft.OperationalInsights/workspaces/', parameters('workspaceName'), '/savedSearches/raxservicehealth')]",
+          "[concat('Microsoft.OperationalInsights/workspaces/', parameters('workspaceName'), '/savedSearches/pattontechmalwaresignatures')]",
+          "[concat('Microsoft.OperationalInsights/workspaces/', parameters('workspaceName'), '/savedSearches/pattontechservicehealth')]"
         ]
       },
       "plan": {
@@ -104,7 +104,7 @@
             "value": "[parameters('workspaceName')]"
           },
           "id": {
-            "value": "raxservicehealth"
+            "value": "pattontechservicehealth"
           },
           "SearchType": {
             "Value": "ServiceHealth"
