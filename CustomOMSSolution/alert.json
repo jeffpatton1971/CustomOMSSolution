@@ -160,7 +160,7 @@
       ],
       "properties": {
         "etag": "*",
-        "type": "[variables('PattonTechAlert').Action.Type]",
+        "Type": "[variables('PattonTechAlert').Action.Type]",
         "name": "[concat(variables('PattonTechAlert').SavedSearch.Name,'|',variables('PattonTechAlert').Schedule.Name,'|',variables('PattonTechAlert').Action.Name)]",
         "description": "[variables('PattonTechAlert').Action.Description]",
         "severity": "[variables('PattonTechAlert').Action.Severity]",
